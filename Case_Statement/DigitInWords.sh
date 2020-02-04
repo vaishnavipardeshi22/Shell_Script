@@ -30,10 +30,10 @@ case $number in
 	echo Seven
 	;;
 	8)
-		echo Eight
+	echo Eight
 	;;
 	9)
-		echo Nine
+	echo Nine
 	;;
 	*)
 	echo Enter only single digit
