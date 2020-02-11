@@ -23,20 +23,18 @@ echo "Random Numbers:" ${randomArray[@]}
 function getMinimum()
 {
 	minVal=${randomArray[0]}
-	secMinVal=${randomArray[0]}
+	secMinVal=1000
 	for i in "${randomArray[@]}"
 	do
-		for j in "${randomArray[@]}"
-		do
-			if [ $j -lt $minVal ]
-			then
-				minVal=$j
-			fi
-			if [ $j -le $secMinVal -a $j -ne $minVal ]
-			then
-				secMinVal=$j
-			fi
-		done
+		if [ $i -lt $minVal ]
+		then
+			secMinVal=$minVal
+			minVal=$i
+		fi
+		if [ $i -le $secMinVal -a $i -ne $minVal ]
+		then
+			secMinVal=$i
+		fi
 	done
 	echo minVal=$minVal
 	echo secMinVal=$secMinVal
@@ -49,20 +47,18 @@ getMinimum ${randomArray[@]}
 function getMaximum()
 {
 	maxVal=${randomArray[0]}
-	secMaxVal=${randomArray[0]}
+	secMaxVal=99
 	for i in "${randomArray[@]}"
 	do
-		for j in "${randomArray[@]}"
-		do
-			if [ $j -gt $maxVal ]
-			then
-				maxVal=$j
-			fi
-			if [ $j -gt $secMaxVal -a $j -ne $maxVal ]
-			then
-				secMaxVal=$j
-			fi
-		done
+		if [ $i -gt $maxVal ]
+		then
+			secMaxVal=$maxVal
+			maxVal=$i
+		fi
+		if [ $i -gt $secMaxVal -a $i -ne $maxVal ]
+		then
+				secMaxVal=$i
+		fi
 	done
 	echo maxVal=$maxVal
 	echo secMaxVal=$secMaxVal
