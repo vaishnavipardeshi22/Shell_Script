@@ -14,22 +14,22 @@ count=0
 function isPrime()
 {
 	for (( i=1; i<=$number; i++ ))
-do
-	if [ $(( number % i )) -eq 0 ]
+	do
+		if [ $(( number % i )) -eq 0 ]
+		then
+			count=$(( count + 1 ))
+		fi
+	done
+
+	if [ $count -eq 2 ]
 	then
-		count=$(( count + 1 ))
+		echo $number is Prime Number
+
+		# FUNCTION CALL TO CHECK PALINDROME OF PRIME NUMBER
+		echo "$( isPalindrome $number )"
+	else
+		echo $number is not prime Number
 	fi
-done
-
-if [ $count -eq 2 ]
-then
-	echo $number is Prime Number
-
-	# FUNCTION CALL TO CHECK PALINDROME OF PRIME NUMBER
-	echo "$( isPalindrome $number )"
-else
-	echo $number is not prime Number
-fi
 }
 
 # FUNCTION TO CHECK PALINDROME
