@@ -1,16 +1,16 @@
 #!/bin/bash -x
 
-# TAKE USER INPUT 
+# TAKE USER INPUT
 read -p "Enter the number: " number
 
 # CALCULATE PRIME FACTORIZATION
-for (( i=2; i<=$number; ))
+for (( index=2; index<=$number; ))
 do
-	if [ $(( number % i )) -eq 0 ]
+	if [ $(( number % index )) -eq 0 ]
 	then
-		number=$(( number / i ))
-		echo "$i"
+		number=$(( number / index ))
+		echo "$index"
 	else
-		((i++))
+		((index++))
 	fi
 done
