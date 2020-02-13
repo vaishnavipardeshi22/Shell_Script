@@ -6,14 +6,14 @@ read -p "Enter the number for prime factorization: " number
 # CALCULATE PRIME FACTORIZATION
 function getPrimeFactor()
 {
-	for (( i=2; i<=$number; ))
+	for (( index=2; index<=$number; ))
 	do
-		if [ $(( number % i )) -eq 0 ]
+		if [ $(( number % index )) -eq 0 ]
 		then
-			number=$(( number / i ))
-			echo "$i"
+			number=$(( number / index ))
+			echo "$index"
 		else
-			((i++))
+			((index++))
 		fi
 	done
 }
