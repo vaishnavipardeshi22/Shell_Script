@@ -40,13 +40,13 @@ function getCelcius()
 
 case $unit in
 	$IS_DEGREE_CELCIUS)
-			# FUNCTION CALL FOR CELCIUS TO FAHRENHITE CONVERSION
-			result="$( getFahrenhiet )"
-			;;
+		# FUNCTION CALL FOR CELCIUS TO FAHRENHITE CONVERSION
+		result="$( getFahrenhiet )"
+		;;
 	$IS_DEGREE_FAHRENHIET)
-			# FUNCTION CALL FOR FAHRENHITE TO CELCIUS CONVERSION
-			result="$( getCelcius )"
-			;;
+		# FUNCTION CALL FOR FAHRENHITE TO CELCIUS CONVERSION
+		result="$( getCelcius )"
+		;;
 	*)
 		echo "Enter Valid Choice."
 		;;
