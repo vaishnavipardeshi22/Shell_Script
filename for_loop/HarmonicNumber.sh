@@ -4,10 +4,8 @@
 sum=0
 
 # CALCULATE HARMONIC NUMBER
-for (( i=1; i<=$1; i++ ))
+for (( index=1; index<=$1; index++ ))
 do
-	 sum=$(echo "scale=2; $sum + 1 / $i" | bc) 
+	 sum=$(echo "scale=2; $sum + 1 / $index" | bc) 
 done
 
-# DISPLAY RESULT
-echo sum=$sum
