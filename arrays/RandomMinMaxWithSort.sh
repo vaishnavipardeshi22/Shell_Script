@@ -27,7 +27,7 @@ function sortArray()
 			then
 				temp=${randomArray[j]}
 				randomArray[j]=${randomArray[j+1]}
-			   randomArray[j+1]=$temp
+				randomArray[j+1]=$temp
 			fi
 		}
 	}
