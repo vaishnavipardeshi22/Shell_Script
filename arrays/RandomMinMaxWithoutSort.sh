@@ -57,7 +57,7 @@ function getMaximum()
 		fi
 		if [ $i -gt $secMaxVal -a $i -ne $maxVal ]
 		then
-				secMaxVal=$i
+			secMaxVal=$i
 		fi
 	done
 	echo maxVal=$maxVal
