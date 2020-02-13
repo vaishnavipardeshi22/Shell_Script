@@ -7,9 +7,9 @@ read -p "Enter the number: " number
 factorial=1
 
 # CALCULATE FACTORIAL
-for (( i=$number; i>=1; i-- ))
+for (( index=$number; index>=1; index-- ))
 do
-	factorial=$(( factorial * i ))
+	factorial=$(( factorial * index ))
 done
 
 # DISPLAY RESULT
