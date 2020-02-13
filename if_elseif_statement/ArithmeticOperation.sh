@@ -7,13 +7,9 @@ read -p "Enter Third Number: " input3
 
 # ARITHMETIC OPERATIONS
 result1=$(( input1 + input2 * input3 ))
-echo result1=$result1
 result2=$(( input1 % input2 + input3 ))
-echo result2=$result2
 result3=$(( input3 + input1 / input2 ))
-echo result3=$result3
 result4=$(( input1 * input2 + input3 ))
-echo result4=$result4
 
 #MAXIMUM NUMBER
 if [ $result1 -gt $result2 -a $result1 -gt $result3 -a $result1 -gt $result4 ]
