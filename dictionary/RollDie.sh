@@ -13,9 +13,6 @@ do
 	rollDie[$random]=$(( ${rollDie[$random]} + 1 ))
 done
 
-echo ${!rollDie[@]}
-echo ${rollDie[@]}
-
 # VARIABLE INITIALIZATION FOR MINIMUM AND MAXIMUM COUNT OF DICE AND DICE NUMBER
 minCount=${rollDie[1]}
 maxCount=${rollDie[1]}
@@ -36,9 +33,3 @@ do
 		maxDieNum=$((i+1))
 	fi
 done
-
-# DISPLAY RESULT
-echo minCount=$minCount
-echo minDieNum=$minDieNum
-echo maxCount=$maxCount
-echo maxDieNum=$maxDieNum
