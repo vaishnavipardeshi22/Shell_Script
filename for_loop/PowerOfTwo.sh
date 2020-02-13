@@ -4,7 +4,7 @@
 power=1
 
 # CALCULATE POWER OF 2
-for (( i=1; i<=$1; i++ ))
+for (( index=1; index<=$1; index++ ))
 do
 	power=$(( power * 2 ))
 	echo $power
