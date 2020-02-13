@@ -7,9 +7,9 @@ read -p "Enter the number: " number
 count=0
 
 # CALCULATE TO FIND NUMBER IS PRIME OR NOT
-for (( i=1; i<=$number; i++ ))
+for (( index=1; index<=$number; index++ ))
 do
-	if [ $(( number % i )) -eq 0 ]
+	if [ $(( number % index )) -eq 0 ]
 	then
 		count=$(( count + 1 ))
 	fi
