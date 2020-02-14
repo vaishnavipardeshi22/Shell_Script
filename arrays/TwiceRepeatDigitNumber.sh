@@ -12,6 +12,6 @@ do
 	fi
 done
 
-# DISPLAY aRRAY
+# DISPLAY ARRAY
 echo ${twiceDigitArray[@]}
 
