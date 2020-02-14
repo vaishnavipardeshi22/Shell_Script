@@ -18,7 +18,6 @@ do
 	then
 		if [ $answer -eq 1 ]
 		then
-			#echo $mid
 			break
 		else
 			echo $((mid+1))
