@@ -1,13 +1,13 @@
 #!/bin/bash -x
 
 # CALCULATING NUMBERS WHOSE DIGITS ARE SAME LIKE 11,22,33 ETC
-for (( i=0; i<=100; i++ ))
+for (( index=0; index<=100; index++ ))
 do
-	if [ $i -ne 0 ]
+	if [ $index -ne 0 ]
 	then
-		if [ $(( i % 11 )) -eq 0 ]
+		if [ $(( index % 11 )) -eq 0 ]
 		then
-			twiceDigitArray[i]=$i
+			twiceDigitArray[index]=$index
 		fi
 	fi
 done
